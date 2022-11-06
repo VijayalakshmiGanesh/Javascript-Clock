@@ -1,8 +1,11 @@
 :root {}
 
 body {
-    background-image: url("abstract-bubbles-backgroung.svg");
-    background-size: cover;
+    /* background-image: url("abstract-bubbles-backgroung.svg"); */
+    background: rgb(238, 174, 202);
+    background: linear-gradient(255deg, rgba(238, 174, 202, 0.3648809865743172) 0%, rgba(148, 187, 233, 0.1856092778908438) 100%);
+    background-size: contain;
+
 }
 
 
@@ -25,7 +28,6 @@ body {
     height: 25rem;
     width: 25rem;
     border-radius: 25rem;
-    /* background: radial-gradient(circle, rgba(180, 127, 255, 0.6870098381149334) 0%, rgba(170, 255, 123, 0.7458333675266982) 40%, rgba(124, 225, 251, 0.6982143199076505) 100%); */
     border: 1rem solid white;
 
 }
@@ -58,4 +60,11 @@ body {
 .seconds {
     height: 4px;
 
+}
+
+@media only screen and (max-width: 600px) {
+    .clock {
+        height: 22rem;
+        width: 22rem;
+    }
 }
